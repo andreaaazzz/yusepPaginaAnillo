@@ -1,0 +1,54 @@
+
+/* Contenedor de los cuatro productos */
+.productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 25px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Tarjeta individual */
+.tarjeta {
+    background-color: #fff7fa;
+    border: 1px solid #ffd1e1;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px #00000012;
+    transition: transform 0.3s;
+}
+
+/* Efecto al pasar el cursor */
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+/* Imagen del producto */
+.tarjeta img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    border-radius: 10px;
+    background-color: white;
+}
+
+/* Nombre */
+.tarjeta h2 {
+    color: #bd4776;
+    font-size: 20px;
+}
+
+/* Descripción */
+.tarjeta p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Precio */
+.tarjeta h3 {
+    color: #e75480;
+    font-size: 18px;
+}
